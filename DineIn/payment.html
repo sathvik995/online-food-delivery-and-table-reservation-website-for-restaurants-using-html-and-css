@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - DineIn | Restro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo-2.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div> 
+    </div>
+
+
+    <div class="rows">
+        <div class="col-75">
+          <div class="containers">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="ramu">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="ramu@gmail.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="8-951,jalandhar,punjab">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="jalandhar">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="Punjab">
+                    </div>
+                    <div class="col-50">
+                      <label for="Pincode">Pincode</label>
+                      <input type="text" id="Pincode" name="Pincode" placeholder="144001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-Pay-Pal" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Ramu">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+             
+            </form>
+            <a href="thanks.html" class="btn">checkout</a>
+          </div>
+        </div>
+      
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i>
+                <b>4</b>
+              </span>
+            </h4>
+            <p><a href="#">Souvlaki</a> <span class="price">₹200.00</span></p>
+            <p><a href="#">Biryani</a> <span class="price">₹400.00</span></p>
+            <p><a href="#">Badham Kheer</a> <span class="price">₹150</span></p>
+            <p><a href="#">pomegranate orange MockTail</a> <span class="price">₹150</span></p>
+            <p><a href="#">Tax</a> <span class="price">₹50</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>₹950</b></span></p>
+          </div>
+        </div>
+      </div>
+
+      
+
+</div>
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo-godrej.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/logo-oppo.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/logo-coca-cola.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/logo-paypal.png" >
+            </div>
+            <div class="col-5">
+                <img src="images/logo-philips.png" >
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------- footer---------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-1.png" >
+                <p>One Cannot Think Well, Love Well, <br> Sleep Well, If One Has Not Dined Well</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                  <a  href=" https://www.facebook.com/shubham.sony.161" target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/sathvik995" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/bejjankisathvik/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://youtube.com/channel/UCJJO3_v47-DDm5GET9rUwcw" target="_blank"><li>Youtube</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2022-  Shubham Sony & Sathivk Rao </p>
+    </div>
+</div>
+<!------ js for toggle menu-------->
+<script>
+  var MenuItems= document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+          {
+              MenuItems.style.maxHeight = "200px";  
+          }
+      else
+          {
+              MenuItems.style.maxHeight = "0px";
+
+          }
+  }
+</script>
+
+</body>
+</html>

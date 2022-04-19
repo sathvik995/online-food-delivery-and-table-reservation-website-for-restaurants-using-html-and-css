@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineIn | Restro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+          <a href="index.html">  <div class="logo"></a>
+               <a href="index.html"> <img src="images/logo-2.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1 id="fh2">Your Odrer is confirmed!!</h1>
+               
+                <p id="fh6">we hope that you like our food. Your food will be delivered to your home shortly, enjoy it with your family and friends.</p>
+
+                <!------rating----------->
+<br>
+                
+<script src="https://use.fontawesome.com/a6f0361695.js"></script>
+
+<h2 id="fh2">WE APPRECIATE YOUR REVIEW!</h2>
+<h6 id="fh6">Your review will help us to improve our web hosting quality products, and customer services.</h6>
+
+
+<form id="feedback" action="">
+  <div class="pinfo">Your personal info</div>
+  
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+  <input  name="name" placeholder="John Doe" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+    <input name="email" type="email" class="form-control" placeholder="john.doe@yahoo.com">
+     </div>
+  </div>
+</div>
+
+
+
+ <div class="pinfo">Rate our overall services.</div>
+  
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-heart"></i></span>
+   <select class="form-control" id="rate">
+      <option value="1star">1</option>
+      <option value="2stars">2</option>
+      <option value="3stars">3</option>
+      <option value="4stars">4</option>
+      <option value="5stars">5</option>
+    </select>
+    </div>
+  </div>
+</div>
+
+ <div class="pinfo">Write your feedback.</div>
+  
+
+<div class="form-group">
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+  <textarea class="form-control" id="review" rows="3"></textarea>
+ 
+    </div>
+  </div>
+</div>
+
+ <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+
+                <br><br><a href="index.html" class="btn">Back to Home &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/thanks.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------- footer---------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-1.png" >
+                <p>One Cannot Think Well, Love Well, <br> Sleep Well, If One Has Not Dined Well</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <a  href=" https://www.facebook.com/shubham.sony.161" target="_blank"><li>Facebook</li></a>
+                    <a href="https://twitter.com/sathvik995" target="_blank"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/bejjankisathvik/" target="_blank"><li>Instagram</li></a>
+                    <a href="https://youtube.com/channel/UCJJO3_v47-DDm5GET9rUwcw" target="_blank"><li>Youtube</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2022-  Shubham Sony & Sathivk Rao </p>
+    </div>
+</div>
+<!------ js for toggle menu-------->
+<script>
+    var MenuItems= document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";  
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+    }
+</script>
+
+</body>
+</html>
